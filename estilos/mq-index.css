@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+:root {
+    --color01: #9C8BD9;
+    --color02: #303AF2;
+    --color03: #5058F2;
+    --color04: #B8BDD9;
+    --color05: #F2F2F2;
+    --color06: #1f26875e;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    #logo {
+        margin-left: 10px;
+        font-size: .7em;
+    }
+
+    .toggle {
+        margin-left: -80px;
+    }
+
+    #btnPerfil {
+        font-size: 2em;
+        margin-right: 10px;
+        background: linear-gradient(to bottom, var(--color01), var(--color03));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #btnPerfil:hover {
+        transform: scale(1.3);
+        transition: 1s ease-out;
+        cursor: pointer;
+    }
+
+    .arrow-left-tec,
+    .arrow-right-tec {
+        position: absolute;
+        top: 700px;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .arrow-right-tec {
+        top: 700px;
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+
+/* Butão de barras */
+
+    #checkbox {
+        display: none;
+    }
+    
+    .toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .3s;
+    }
+    
+    .bars {
+        width: 100%;
+        height: 4px;
+        background-color: var(--color03);
+        border-radius: 5px;
+        transition-duration: .3s;
+    }
+    
+    #checkbox:checked + .toggle .bars {
+        margin-left: 13px;
+    }
+    
+    #checkbox:checked + .toggle #bar2 {
+        transform: rotate(135deg);
+        margin-left: 0;
+        transform-origin: center;
+        transition-duration: .3s;
+    }
+    
+    #checkbox:checked + .toggle #bar1 {
+        transform: rotate(45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+    }
+    
+    #checkbox:checked + .toggle #bar3 {
+        transform: rotate(-45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+    }
+
+    #quadro {
+        margin-left: 10px;
+    }
+
+    #quadro p {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .item {
+        width: 100vw;
+        height: 175px;
+    }
+
+    .item-tec img {
+        width: 375px;
+        height: 375px;
+    }
+
+    .item-tec:hover h3,
+    .item-tec:hover h4,
+    .item-tec:hover h5,
+    .item-tec:hover h6 {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .item-category {
+        width: 120px;
+        height: 120px;
+        font-size: .8em;
+    }
+
+    .item-category i {
+        font-size: 4em;
+    }
+
+    #pagOpen.open #containerPag {
+        width: 85vw;
+        height: 80%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #pagOpen.open #containerPag img {
+        width: 350px;
+    }
+
+    #pagOpen.open #buttons {
+        width: 100%;
+        height: 150px;
+        flex-direction: row;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #pagOpen.open button {
+        width: 150px;
+        height: 75px;
+        box-shadow: -5px 5px 2px var(--color06);
+        transform: translate(5px, -5px);
+    }
+
+    #buttons button:hover i {
+        display: none;
+    }
+
+    #buttons button:active {
+        transform: translate(0 , 0);
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    header nav,
+    #checkbox {
+        display: none;
+    }
+    
+    .toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .3s;
+        margin-left: -80px;
+    }
+
+    #btnPerfil {
+        font-size: 2em;
+        margin-right: 10px;
+        background: linear-gradient(to bottom, var(--color01), var(--color03));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #btnPerfil:hover {
+        transform: scale(1.3);
+        transition: 1s ease-out;
+        cursor: pointer;
+    }
+    
+    .bars {
+        width: 100%;
+        height: 4px;
+        background-color: var(--color03);
+        border-radius: 5px;
+        transition-duration: .3s;
+    }
+    
+    #checkbox:checked + .toggle .bars {
+        margin-left: 13px;
+    }
+    
+    #checkbox:checked + .toggle #bar2 {
+        transform: rotate(135deg);
+        margin-left: 0;
+        transform-origin: center;
+        transition-duration: .3s;
+    }
+    
+    #checkbox:checked + .toggle #bar1 {
+        transform: rotate(45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+    }
+    
+    #checkbox:checked + .toggle #bar3 {
+        transform: rotate(-45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+    }
+
+    .item-category {
+        width: 150px;
+        height: 120px;
+    }
+
+    .item-category i {
+        font-size: 4.2em;
+    }
+
+    #pagOpen.open #containerPag {
+        width: 80vw;
+    }
+
+    #pagOpen.open #buttons {
+        width: 90%;
+        height: 150px;
+        flex-direction: row;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #infoPag #title i {
+        position: absolute;
+        top: 20px;
+        left: 475px;
+        font-size: .9em;
+    }
+
+
+    #pagOpen.open button {
+        width: 150px;
+        height: 75px;
+        box-shadow: -5px 5px 2px var(--color06);
+        transform: translate(5px, -5px);
+    }
+
+    #buttons button:hover i {
+        display: none;
+    }
+
+    #buttons button:active {
+        transform: translate(0 , 0);
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #checkbox {
+        display: none !important;
+    }
+
+    .arrow-left-tec,
+    .arrow-right-tec {
+        display: none !important;
+    }
+
+    #destaques {
+        max-width: 100vw;
+    }
+
+    #category {
+        height: 100%;
+    }
+
+    #tec {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .gallery-tec {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        transition: 1s ease-out;
+    }
+
+    .item-tec {
+        opacity: 1;
+    }
+
+    .item-category {
+        width: 300px;
+        margin: 10px 0px;
+    }
+
+    #infoPag #title i {
+        position: absolute;
+        top: 20px;
+        left: 475px;
+        font-size: .9em;
+    }
+
+    footer {
+        margin: 0;
+    }
+}

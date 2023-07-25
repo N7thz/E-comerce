@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerce</title>
+    <link rel="shortcut icon" href="/imgs/favicon-32x32.pngf
+    " type="image/x-icon">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/mq-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section id="logo">
+            <h1>B.store</h1>
+        </section>
+        <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        <nav>
+            <ul>
+                <li><a href="#">Central do Vendedor</a></li>
+                <li><a href="#">Vender na B.store</a></li>
+                <li><a href="#">Baixe o App</a></li>
+                <li>
+                    <a href="#">Siga-nos no
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="fa-regular fa-circle-user" id="btnPerfil"></section>  
+    </header>
+    <main>
+        <div id="destaques">
+            <h2>Destaques do Dia</h2>
+            <button class="arrow-left fa-solid fa-arrow-left control" aria-label="Previous image"></button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="/imgs/amazon01.webp" alt="destaques01-foto" class="item current-item">
+                    <img src="/imgs/amazon02.webp" alt="destaques02-foto" class="item">
+                    <img src="/imgs/amazon03.webp" alt="destaques03-foto" class="item">
+                    <img src="/imgs/amazon04.webp" alt="destaques04-foto" class="item">
+                </div>
+            </div>
+            <button class="arrow-right fa-solid fa-arrow-right control" aria-label="Previous image"></button>
+        </div>
+
+        <div id="tec">
+            <h2>Tecnologia</h2>
+            <button class="arrow-left-tec fa-solid fa-arrow-left control" aria-label="Previous image"></button>
+            <section class="gallery-wrapper">
+                <section class="gallery-tec">
+                    <section class="item-tec current-item-tec itemOpen">
+                        <img src="/imgs/cell-foto.webp" alt="foto-cell">
+                        <div id="quadro">
+                            <h6>R$ 1.599</h6>
+                            <h3>R$ 989</h3><h4>38% OFF</h4><h5>10X R$ 98,90 sem juros</h5>
+                            <p>
+                                Samsung Galaxy A14 Dual 128gb 4gb Ram Tela 6.6' 4g Câm 50mp
+                            </p>
+                        </div>
+                    </section>
+                    <section class="item-tec itemOpen">
+                        <img src="/imgs/fone-foto.webp" alt="foto-fone">
+                        <div id="quadro">
+                            <h6>R$ 319</h6>
+                            <h3>R$ 239</h3><h4>25% OFF</h4>
+                            <p>
+                                Fone De Ouvido On-ear Sem Fio Jbl Tune 520bt Blt520bt
+                            </p>
+                        </div>
+                    </section>
+                    <section class="item-tec itemOpen">
+                        <img src="/imgs/notebook-foto.webp" alt="foto-notebook">
+                        <div id="quadro">
+                            <h6>R$ 2.210</h6>
+                            <h3>R$ 1.849</h3><h4>16% OFF</h4><h5>10X R$ 194,90 sem juros</h5>
+                            <p>
+                                Samsung Galaxy A14 Dual 128gb 4gb Ram Tela 6.6' 4g Câm 50mp
+                            </p>
+                        </div>
+                    </section>
+                    <section class="item-tec itemOpen">
+                        <img src="/imgs/ps5-foto.webp" alt="foto-ps5">
+                        <div id="quadro">
+                            <h6>R$ 4.499</h6>
+                            <h3>R$ 3.959</h3><h4>12% OFF</h4>
+                            <p>
+                                Sony PlayStation 5 825GB God of War Ragnarok Bundle cor branco e preto
+                            </p>
+                        </div>
+                    </section>
+                    <section class="item-tec itemOpen">
+                        <img src="/imgs/tv-foto.webp" alt="foto-tv">
+                        <div id="quadro">
+                            <h6>R$ 3.232</h6>
+                            <h3>R$ 1.759</h3><h4>45% OFF</h4><h5>10X R$ 175,90 sem juros</h5>
+                            <p>
+                                Smart Tv LG Ai Thinq 43uq751c0sf Led 4k43 100v/240v
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <button class="arrow-right-tec fa-solid fa-arrow-right control-tec" aria-label="Previous image"></button>
+        </div>  
+        
+        <div id="category">
+            <h2>Categorias</h2>
+            <section id="container-category">
+                <section class="item-category">
+                    <i class="fa-solid fa-music"></i>
+                    <p> Músicas, Filmes e Seriados </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-person"></i>
+                    <p> Serviços </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-guitar"></i>
+                    <p> Estrumentos Musicais </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-book-open"></i>
+                    <p> Livros, Quadrinhos e Revistas </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <p> Games e Consoles</p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <p> Saúde e Bem-Estar </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-gifts"></i>
+                    <p> Presentes </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-solid fa-camera"></i>
+                    <p> Câmera e acessórios </p>
+                </section>
+                <section class="item-category">
+                    <i class="fa-sharp fa-solid fa-table-cells-large"></i>
+                    <p> Mais Categorias </p>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Menu Aberto -->
+    <div id="menuAberto">
+        <ul>
+            <li><a href="#">Ofertas do Dia</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Central do Vendedor</a></li>
+            <li><a href="#">Vender na B.store</a></li>
+            <li><a href="#">Baixe o App</a></li>
+        </ul>
+    </div>
+
+    <!-- Perfil Aberto -->
+    <div id="perfilAberto">
+        <ul>
+            <li class="btnSearch">
+                <i class="fa-solid fa-magnifying-glass btnSearch"></i>
+                Pesquisar
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrinho
+            </li>
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notificações
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Minha Conta
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-info"></i>
+                Ajuda
+            </li>
+        </ul>
+    </div>
+
+    <!-- barra de Pesquisa Aberta -->
+    <div id="search">
+        <i class="fa-solid fa-x" id="lupa"></i>
+        <input type="text" id="searchInput" placeholder="O que está procurando?">
+    </div>
+
+    <!-- Pagina do produto Aberta -->
+    <div id="pagOpen">
+        <div id="containerPag">
+            <picture>
+                <img src="/imgs/cell-foto.webp" alt="foto-cell">
+            </picture>
+            <div id="infoPag">
+                <div id="title">
+                    <p>Samsung Galaxy A14 Dual 128gb 4gb Ram Tela 6.6' 4g Câm 50mp</p>
+                    <h2>R$ 876,67</h2>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h2>em 12x R$ 84,99</h2>
+                <h3>Ver os meios de pagamento</h3>
+                <div id="frete">
+                    <i class="fa-solid fa-truck"></i>
+                    <h2>Envio para todo o país</h2>
+                </div>
+                <div id="color">
+                    <h1>Cor:</h1>
+                    <label for="prata">Prata</label>
+                    <input type="radio" name="color" id="prata">
+                    <label for="preto">Preto</label>
+                    <input type="radio" name="color" id="preto">
+                    <label for="branco">Branco</label>
+                    <input type="radio" name="color" id="branco">
+                </div>
+                <div id="buttons">
+                    <button id="buyBtn">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Comprar agora
+                    </button>
+                    <button id="marketBtn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+                <div id="btnX" class="fa-solid fa-x"></div>
+            </div>  
+        </div>
+    </div>
+
+    <footer>
+        <ul class="options">
+            <li><a href="#">Central do Vendedor</a></li>
+            <li><a href="#">Vender na B.store</a></li>
+            <li><a href="#">Baixe o App</a></li>
+        </ul>
+        <ul class="icons">
+            <li class="fa-brands fa-twitter"></li>
+            <li class="fa-brands fa-tiktok"></li>
+            <li class="fa-brands fa-instagram"></li>
+            <li class="fa-brands fa-facebook"></li>
+        </ul>
+    </footer>
+</body>
+</html>
